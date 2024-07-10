@@ -9,12 +9,14 @@ export default {
         'poppins': ['Poppins', 'sans-serif'],
       },
       boxShadow: {
-        'box-new': '5px 5px 15px rgb(15 23 42 ), -5px -5px 15px rgb(30 41 59 )',
+        'box-new': '5px 5px 8px rgb(0 0 0), -5px -5px 8px rgb(30 41 59 )',
       },
-      transitionProperty: {
-        'bg-card': 'background-color 0.2s ease, border-radius 0.2s ease',
-        'opacity': 'opacity 0.5s ease', // Ajout de la transition pour l'opacité
-      },
+      fontSize: {
+        'clamp-7xl': 'clamp(3rem,1rem + 3.5vw , 6.25rem)',
+        'clamp-6xl': 'clamp(2.5rem,0.5rem + 3.5vw , 5.25rem)',
+        'clamp-4xl': 'clamp(3rem,1rem + 3.5vw , 6.25rem)',
+        'clamp-3xl': 'clamp(2rem,0.35rem + 2.5vw , 2.25rem)',
+      }
     },
   },
   plugins: [],

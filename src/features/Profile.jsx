@@ -1,28 +1,34 @@
-import { FaGithub, FaInstagram, FaLinkedinIn } from "react-icons/fa";
+/* eslint-disable react/no-unescaped-entities */
+import { FaDownload } from 'react-icons/fa'
+import Info from './Info'
 
-const Profile = ({ backgroundSrc, profileSrc, profession, username, githubLink, linkedinLink, instagramLink }) => {
+const Profile = () => {
   return (
-    <article>
-      <img className="max-h-40 w-full rounded-b-xl object-cover" src={backgroundSrc} alt="Background" />
-      <div className="-mt-14 flex flex-row items-center justify-between text-zinc-100">
-        <div className="ml-5 flex flex-row items-center gap-6">
-          <img src={profileSrc} alt="Profile" className="w-32 rounded-full border-4 border-zinc-900" />
-          <div className="mt-12">
-            <p className="font-semibold">
-              {profession} <br />
-              <samp className="font-medium">@{username}</samp>
-            </p>
-          </div>
-        </div>
-        <div className="mt-12 flex items-center gap-4 max-sm:hidden">
-          <button className="rounded-full bg-amber-300 p-2 font-semibold text-zinc-900">Me contacter</button>
-          <a href={githubLink} target="_blank" rel="noopener noreferrer" className="shadow-box-new bg-slate-900 p-2 text-2xl duration-300 hover:rounded-full hover:bg-slate-700"><FaGithub/></a>
-          <a href={linkedinLink} target="_blank" rel="noopener noreferrer" className="shadow-box-new bg-slate-900 p-2 text-2xl duration-300 hover:rounded-full hover:bg-slate-700"><FaLinkedinIn/></a>
-          <a href={instagramLink} target="_blank" rel="noopener noreferrer" className="shadow-box-new bg-slate-900 p-2 text-2xl duration-300 hover:rounded-full hover:bg-slate-700"><FaInstagram/></a>
-        </div>
+    <article className="relative flex  flex-col gap-4 ">
+      <p className=" text-lg text-amber-300">Bonjour, c'est</p>
+      <h1 className="text-clamp-7xl font-bold">Narson Kevine.</h1>
+      <p className=" text-clamp-6xl/tight font-semibold max-md:text-clamp-3xl  text-gray-500 ">
+        A la recherche d'une experience
+      </p>
+      <Info />
+      <div className="my-24 max-md:my-20">
+        <a
+          href="./cv-yves.pdf"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="group relative inline-flex items-center justify-center overflow-hidden rounded-full border-2 border-amber-300 p-4 px-6 py-3 font-medium text-slate-900 shadow-md transition duration-300 ease-out"
+        >
+          <span className="ease absolute inset-0 flex size-full -translate-x-full items-center justify-center bg-amber-300  duration-300 group-hover:translate-x-0">
+            <FaDownload />
+          </span>
+          <span className="ease absolute flex size-full items-center justify-center text-amber-300 transition-all duration-300 group-hover:translate-x-full">
+            Télecharger CV
+          </span>
+          <span className="invisible relative">Télécharger CV</span>
+        </a>
       </div>
     </article>
-  );
-};
+  )
+}
 
-export default Profile;
+export default Profile

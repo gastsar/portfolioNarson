@@ -27,40 +27,6 @@ Le projet est organisé de la manière suivante :
 
 Pour exécuter ce projet localement sur votre machine, suivez les étapes suivantes :
 
-1. Assurez-vous d'avoir Node.js et pnpm installés sur votre machine.
-2. Clonez ce dépôt sur votre ordinateur en utilisant la commande suivante :
-Bien sûr ! Voici un exemple de fichier README pour votre portfolio original :
-
-markdown
-
-# Portfolio de [Votre Nom]
-
-Bienvenue sur mon portfolio ! Ce projet a été créé pour présenter mes compétences, mes projets et mon expérience professionnelle dans le domaine du développement web.
-
-## Technologies utilisées
-
-Ce portfolio a été développé en utilisant les technologies suivantes :
-
-- HTML
-- CSS (avec Tailwind CSS pour le styling)
-- JavaScript (avec React.js pour la création des composants)
-- React Router (pour la navigation entre les différentes pages)
-- [Autres technologies utilisées dans votre projet, le cas échéant]
-
-## Structure du projet
-
-Le projet est organisé de la manière suivante :
-
-- `src/`: Ce dossier contient les fichiers source de l'application React.js.
-  - `components/`: Les composants réutilisables utilisés pour construire les différentes pages et fonctionnalités.
-  - `pages/`: Les composants correspondant à chaque page du portfolio.
-  - `assets/`: Les fichiers statiques tels que les images utilisées dans le portfolio.
-- `public/`: Ce dossier contient les fichiers statiques qui seront servis par le navigateur, tels que les fichiers HTML et les fichiers d'images.
-
-## Comment exécuter le projet localement
-
-Pour exécuter ce projet localement sur votre machine, suivez les étapes suivantes :
-
 1. Assurez-vous d'avoir Node.js et npm installés sur votre machine.
 2. Clonez ce dépôt sur votre machine en utilisant la commande suivante :
 

@@ -1,47 +1,32 @@
-/* eslint-disable react/jsx-no-comment-textnodes */
-/* eslint-disable react/no-unescaped-entities */
-
-import About from "../../features/About";
-import Experience from "../../features/Experience";
-import Formation from "../../features/Formation";
-import Info from "../../features/Info";
-import Profile from "../../features/Profile";
-import Skills from "../../features/Skills";
+import Experience from '../../features/Experience'
+import Formation from '../../features/Formation'
+import Profile from '../../features/Profile'
+import Quality from '../../features/Quality'
+import Skills from '../../features/Skills'
+import { SocialMedia } from '../../utils/SocialMedia'
 
 export default function Home() {
+  return (
+    <>
+      <main className=" m-auto mb-10   flex max-w-5xl flex-col gap-8 p-20  text-zinc-100 max-sm:p-10">
+        <section className="py-28  max-sm:py-20" id="about">
+          <Profile />
+        </section>
+        <section id="quality">
+          <Quality />
+        </section>
+        <section id="formation">
+          <Formation />
+        </section>
+        <section id="skills">
+          <Skills />
+        </section>
+        <section id="projects">
+          <Experience />
+        </section>
 
-
-    return (
-        <>    <main className="m-auto  max-w-7xl bg-slate-900 font-poppins  px-10 ">
-            <section className="relative" id="about">
-                <Profile
-                    backgroundSrc="https://images.pexels.com/photos/276452/pexels-photo-276452.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-                    profileSrc="./images/profil.png"
-                    profession="Développeur Web"
-                    username="kevine_dev"
-                    githubLink="https://github.com/gastsar"
-                    linkedinLink="https://www.linkedin.com/in/yvesnarsonkevine/"
-                    instagramLink="https://www.instagram.com/kevine.dev/"
-                />
-
-            </section>
-            <section className=" flex  gap-8  text-zinc-100">
- 
-  <div className=" flex  max-md:flex-col gap-8 max-md:w-full">
-      <Info />
-  <Formation />
-  </div>
-
-</section>   
-            <section className="mt-10 text-zinc-100 ">
-                <Skills />
-            </section>
-
-            <section id="projects"  className="my-10">
-                 <Experience/>
-            </section>
-        </main>
-        </>
-    )
+        <SocialMedia />
+      </main>
+    </>
+  )
 }
-
