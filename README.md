@@ -40,7 +40,6 @@ cd nom-du-projet
 
 pnpm install
 
-
 5. Lancez l'application en exécutant la commande suivante :
 
 pnpm run dev
